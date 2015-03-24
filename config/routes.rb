@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'welcome#index'
+  root 'home#index'
 
-  get 'wakeup' => 'welcome#wake_up'
+  get 'wakeup' => 'home#wake_up'
 
 end

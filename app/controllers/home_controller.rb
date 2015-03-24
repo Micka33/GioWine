@@ -1,4 +1,5 @@
-class WelcomeController < ActionController::Base
+class HomeController < ActionController::Base
+  layout "application"
 
   def wake_up
     # regularly called by new_relic to test the website is responding
@@ -7,7 +8,7 @@ class WelcomeController < ActionController::Base
   end
 
   def index
-    @title = 'Giowine'
+    @title = 'Welcome to GioWine'
   end
 
 end
